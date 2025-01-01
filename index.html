@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pendaftaran Lomba Ngiclik 2025</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 600px;
+        }
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+        }
+        form {
+            display: grid;
+            gap: 15px;
+        }
+        label {
+            font-weight: bold;
+            color: #333;
+        }
+        input, select, textarea {
+            padding: 10px;
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pendaftaran Lomba Ngiclik 2025</h1>
+        <form action="send_email.php" method="POST">
+            <label for="fullName">Nama Lengkap</label>
+<input type="text" id="fullName" name="fullName" placeholder="Masukkan nama lengkap" required>
+
+            <label for="age">Usia</label>
+            <input type="number" id="age" name="age" placeholder="Masukkan usia" required>
+
+            <label for="gender">Jenis Kelamin</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+                <option value="other">Lainnya</option>
+            </select>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Masukkan email" required>
+
+            <label for="phone">Nomor Telepon</label>
+            <input type="tel" id="phone" name="phone" placeholder="Masukkan nomor telepon" required>
+
+            <label for="competition">Pilihan Lomba</label>
+            <select id="competition" name="competition" required>
+                <option value="ngiclik">Ngiclik (Lomba Utama)</option>
+                <option value="photography">Lomba Fotografi</option>
+                <option value="videography">Lomba Videografi</option>
+            </select>
+
+            <label for="address">Alamat Lengkap</label>
+<textarea id="address" name="address" rows="4" placeholder="Masukkan alamat lengkap" required></textarea>
+
+            <button type="submit">Daftar Sekarang</button>
+        </form>
+    </div>
+
+</body>
+</html>
+```
